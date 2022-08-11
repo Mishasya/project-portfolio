@@ -1,0 +1,156 @@
+.light-scheme {
+  body {
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  .title-wrapper {
+    &::before {
+      background-color: var(--color-black);
+    }
+  }
+
+  .title {
+    color: var(--color-black);
+    background-color: var(--color-white);
+  }
+
+  .btn,
+  .btn.btn--active {
+    border: none;
+
+    &--dark {
+      border-color: transparent;
+      color: var(--color-black);
+      background-color: var(--color-gold);
+    }
+
+    &.btn--active {
+      border: 2px solid var(--color-black);
+      color: var(--color-gold);
+      background-color: var(--color-black);
+
+      &:hover {
+        color: var(--color-gold);
+      }
+    }
+
+    &--light {
+      border-color: transparent;
+      color: var(--color-black);
+      background-color: var(--color-white);
+    }
+
+    &:hover {
+      border-color: black;
+      color: var(--color-gold);
+      background-color: var(--color-black);
+      box-shadow: var(--color-black) 7px 7px 13px 0;
+    }
+  }
+
+  .scheme-btn {
+    &__svg--moon {
+      display: block;
+    }
+
+    &__svg--sun {
+      display: none;
+    }
+  }
+
+  .icon {
+    fill: var(--color-black);
+    transition: fill var(--transition-delay);
+  
+    &:hover {
+      fill: var(--color-gold);
+    }
+  }
+
+  .nav {
+    &__link {
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  .toggle-lang {
+    &__label {
+      &:hover {
+        color: var(--color-white);
+      }
+    }
+  
+    &__input:checked + .toggle-lang__label {
+      color: var(--color-white);
+    }
+  }
+
+  .hero {
+    background-color: var(--color-white);
+    background-image: url("../assets/img/bg-hero-light.jpg");
+  }
+
+  .portfolio__btn.btn {
+    box-shadow: none;
+    transform: none;
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  .contacts {
+    background-color: var(--color-white);
+    background-image: url("../assets/img/contacts-img-light.jpg");
+
+    &__title {
+      background-color: transparent;
+    }
+
+    &__input,
+    &__textarea {
+      border: 2px solid var(--color-gold);
+      color: var(--color-black);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__input::placeholder,
+    &__textarea::placeholder {
+      color: var(--color-black);
+    }
+  }
+
+
+  @include desktop-small {
+    .burger {
+      color: var(--color-black);
+    }
+
+    .hero {
+      background-image: url("../assets/img/bg-hero_tablet-light.jpg");
+    }
+
+    .open-menu {
+      .nav {
+        background-color: var(--color-white);
+
+        &__link {
+          &:hover {
+            color: var(--color-black);
+          }
+        }
+      }
+    }
+  }
+
+
+  @include tablet {
+    .contacts {
+      background-image: url("../assets/img/contacts-img_tablet-light.jpg");
+    }
+  }
+}

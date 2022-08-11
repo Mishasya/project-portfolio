@@ -1,0 +1,14 @@
+.burger {
+  @include btn-reset;
+
+  @include burger;
+
+  &--active {
+    left: -10px;
+
+    &::before,
+    &::after {
+      width: 123%;
+    }
+  }
+}

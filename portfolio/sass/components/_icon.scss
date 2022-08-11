@@ -1,0 +1,8 @@
+.icon {
+  fill: var(--color-white);
+  transition: fill var(--transition-delay);
+
+  &:hover {
+    fill: var(--color-gold);
+  }
+}

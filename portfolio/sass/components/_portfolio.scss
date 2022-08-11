@@ -1,0 +1,55 @@
+.portfolio {
+
+  &__tabs-btns {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    max-width: 892px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    gap: 4px;
+  }
+
+  &__btn.btn {
+    box-shadow: none;
+    transform: none;
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
+  &__tabs-season {
+    @include list-reset;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+
+
+@include tablet {
+  .portfolio {
+    &__tabs-btns {
+      max-width: 445px;
+    }
+
+    &__tabs-season {
+      grid-template-columns: repeat(auto-fill, 450px);
+      justify-content: center;
+    }
+  }
+}
+
+
+@include mobile {
+  .portfolio {
+
+    &__tabs-season {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+}

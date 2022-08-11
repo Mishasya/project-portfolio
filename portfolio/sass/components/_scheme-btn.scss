@@ -1,0 +1,11 @@
+.scheme-btn {
+  @include btn-reset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__svg--moon {
+    display: none;
+  }
+}

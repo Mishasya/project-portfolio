@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="localStorage.js"></script> -->
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="#" aria-label="Go to main page">
+          <svg class="logo__svg icon" width="50" height="50" aria-hidden="true">
+            <use xlink:href="assets/img/sprite.svg#icon-logo"></use>
+          </svg>
+        </a>
+  
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#skills" class="nav__link" data-translate="skills">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link" data-translate="portfolio">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#video" class="nav__link" data-translate="video">Video</a>
+            </li>
+            <li class="nav__item">
+              <a href="#price" class="nav__link" data-translate="price">Price</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link" data-translate="contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="header__toggle-lang toggle-lang">
+          <div class="toggle-lang__inner">
+            <input class="toggle-lang__input visually-hidden" type="radio" name="toggle" id="en" value="en" checked>
+            <label class="toggle-lang__label" for="en">En</label>
+          </div>
+          <div class="toggle-lang__inner">
+            <input class="toggle-lang__input visually-hidden" type="radio" name="toggle" id="ru" value="ru">
+            <label class="toggle-lang__label" for="ru">Ru</label>
+          </div>
+        </div>
+
+        <button class="header__scheme-btn scheme-btn" aria-label="Dark scheme">
+          <svg class="scheme-btn__svg scheme-btn__svg--sun icon" width="45" height="45" aria-hidden="true">
+            <use xlink:href="assets/img/sprite.svg#icon-sun"></use>
+          </svg>
+          <svg class="scheme-btn__svg scheme-btn__svg--moon icon" width="41" height="40" aria-hidden="true">
+            <use xlink:href="assets/img/sprite.svg#icon-moon"></use>
+          </svg>
+        </button>
+
+        <button class="header__burger burger" aria-label="Open menu">
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-indent">
+        <div class="container hero__container">
+          <h1 class="main-title hero__title" data-translate="hero-title">Alexa Rise</h1>
+    
+          <p class="hero__text" data-translate="hero-text">Save sincere emotions, romantic feelings and happy moments of&nbsp;life together with professional photographer Alexa Rise</p>
+    
+          <button class="hero__btn btn btn--light" data-translate="hire">Hire me</button>
+        </div>
+      </section>
+
+      <div class="container">
+        <section class="skills section-indent" id="skills">
+          <div class="title-wrapper title-wrapper__skills">
+            <h2 class="title" data-translate="skills">Skills</h2>
+          </div>
+
+          <ul class="skills__list">
+            <li class="skills__item">
+              <h3 class="skills__subtitle" data-translate="skill-title-1">Digital photography</h3>
+              <p class="skills__text" data-translate="skill-text-1">High-quality photos in the studio and on the nature</p>
+            </li>
+            <li class="skills__item">
+              <h3 class="skills__subtitle" data-translate="skill-title-2">Video shooting</h3>
+              <p class="skills__text" data-translate="skill-text-2">Capture your moments so that they always stay with you</p>
+            </li>
+            <li class="skills__item">
+              <h3 class="skills__subtitle" data-translate="skill-title-3">Retouch</h3>
+              <p class="skills__text" data-translate="skill-text-3">I strive to make photography surpass reality</p>
+            </li>
+            <li class="skills__item">
+              <h3 class="skills__subtitle" data-translate="skill-title-4">Audio</h3>
+              <p class="skills__text" data-translate="skill-text-4">Professional sounds recording for video, advertising, portfolio</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="portfolio section-indent" id="portfolio">
+          <div class="title-wrapper">
+            <h2 class="title" data-translate="portfolio">Portfolio</h2>
+          </div>
+
+          <div class="portfolio__tabs-btns">
+            <button class="portfolio__btn btn btn--dark" data-season="winter" data-translate="winter">Winter</button>
+            <button class="portfolio__btn btn btn--dark" data-season="spring" data-translate="spring">Spring</button>
+            <button class="portfolio__btn btn btn--dark" data-season="summer" data-translate="summer">Summer</button>
+            <button class="portfolio__btn btn btn--dark btn--active" data-season="autumn" data-translate="autumn">Autumn</button>
+          </div>
+          <div class="portfolio__tabs-content">
+            <ul class="portfolio__tabs-season portfolio__tabs-season--autumn">
+                <li class="portfolio__tabs-item">
+                  <img class="portfolio__tabs-img" src="assets/img/autumn/1.jpg" alt="Photo 1">
+                </li>
+                <li class="portfolio__tabs-item">
+                  <img class="portfolio__tabs-img" src="assets/img/autumn/2.jpg" alt="Photo 2">
+                </li>
+                <li class="portfolio__tabs-item">
+                  <img class="portfolio__tabs-img" src="assets/img/autumn/3.jpg" alt="Photo 3">
+                </li>
+                <li class="portfolio__tabs-item">
+                  <img class="portfolio__tabs-img" src="assets/img/autumn/4.jpg" alt="Photo 4">
+                </li>
+                <li class="portfolio__tabs-item">
+                  <img class="portfolio__tabs-img" src="assets/img/autumn/5.jpg" alt="Photo 5">
+                </li>
+                <li class="portfolio__tabs-item">
+                  <img class="portfolio__tabs-img" src="assets/img/autumn/6.jpg" alt="Photo 6">
+                </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="video section-indent" id="video">
+          <div class="title-wrapper">
+            <h2 class="title" data-translate="video">Video</h2>
+          </div>
+
+          <div class="video__wrapper">
+            <video class="video__content" src="#">
+              
+            </video>
+            <button class="video__btn" aria-label="Play video">
+              <svg class="video__svg icon" width="130" height="130" aria-hidden="true">
+                <use xlink:href="assets/img/sprite.svg#icon-play"></use>
+              </svg>
+            </button>
+          </div>
+        </section>
+
+        <section class="price section-indent section-indent--price" id="price">
+          <div class="title-wrapper">
+            <h2 class="title" data-translate="price">Price</h2>
+          </div>
+
+          <ul class="price__list">
+            <li class="price__item">
+              <h3 class="price__title">Standard</h3>
+              <span class="price__price">500 $</span>
+              <ul class="price__services">
+                <li class="price__services-item" data-translate="price-description-1-span-1">One location</li>
+                <li class="price__services-item" data-translate="price-description-1-span-2">120 photos in color</li>
+                <li class="price__services-item" data-translate="price-description-1-span-3">12 photos in retouch</li>
+                <li class="price__services-item" data-translate="price-description-1-span-4">Readiness 2-3 weeks</li>
+                <li class="price__services-item" data-translate="price-description-1-span-5">Make up, visage</li>
+              </ul>
+              <button class="price__btn btn" data-translate="order">Order shooting</button>
+            </li>
+            <li class="price__item">
+              <h3 class="price__title">Premium</h3>
+              <span class="price__price">700 $</span>
+              <ul class="price__services">
+                <li class="price__services-item" data-translate="price-description-2-span-1">One or two locations</li>
+                <li class="price__services-item" data-translate="price-description-2-span-2">200 photos in color</li>
+                <li class="price__services-item" data-translate="price-description-2-span-3">20 photos in retouch</li>
+                <li class="price__services-item" data-translate="price-description-2-span-4">Readiness 1-2 weeks</li>
+                <li class="price__services-item" data-translate="price-description-2-span-5">Make up, visage</li>
+              </ul>
+              <button class="price__btn btn" data-translate="order">Order shooting</button>
+            </li>
+            <li class="price__item">
+              <h3 class="price__title">Gold</h3>
+              <span class="price__price">1000 $</span>
+              <ul class="price__services">
+                <li class="price__services-item" data-translate="price-description-3-span-1">Three locations or more</li>
+                <li class="price__services-item" data-translate="price-description-3-span-2">300 photos in color</li>
+                <li class="price__services-item" data-translate="price-description-3-span-3">50 photos in retouch</li>
+                <li class="price__services-item" data-translate="price-description-3-span-4">Readiness 1 week</li>
+                <li class="price__services-item" data-translate="price-description-3-span-5">Make up, visage, hairstyle</li>
+              </ul>
+
+              <button class="price__btn btn" data-translate="order">Order shooting</button>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class=" contacts__wrapper">
+            <h2 class="title contacts__title" data-translate="contact-me">Contact me</h2>
+      
+            <form class="contacts__form" action="#">
+              <div class="contacts__form-inner">
+                <input class="contacts__input" id="email" type="email" placeholder="E-mail">
+                <label class="visually-hidden" for="email">E-mail</label>
+              </div>
+      
+              <div class="contacts__form-inner">
+                <input class="contacts__input" id="phone" type="tel" placeholder="Phone">
+                <label class="visually-hidden" for="phone">Phone</label>
+              </div>
+      
+              <div class="contacts__form-inner">
+                <textarea class="contacts__textarea" name="textarea" id="textarea" placeholder="Message"></textarea>
+                <label class="visually-hidden" for="textarea">Message</label>
+              </div>
+      
+              <button class="btn btn--light" type="submit" data-translate="send-message">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__creation">
+          <span class="footer__copyright">&copy;</span>
+          <span class="footer__year">2022</span>
+          <a class="footer__link" href="https://github.com/Mishasya">github</a>
+        </div>
+
+        <a class="footer__link footer__link--center" href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Go to Instagram">
+              <svg class="social__svg icon" width="28" height="28" aria-hidden="true">
+                <use xlink:href="assets/img/sprite.svg#icon-inst"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Go to Facebook">
+              <svg class="social__svg icon" width="17" height="28" aria-hidden="true">
+                <use xlink:href="assets/img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Go to Twitter">
+              <svg class="social__svg icon" width="28" height="22" aria-hidden="true">
+                <use xlink:href="assets/img/sprite.svg#icon-tw"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Go to Pinterest">
+              <svg class="social__svg icon" width="28" height="28" aria-hidden="true">
+                <use xlink:href="assets/img/sprite.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  
+  <script type="module" src="index.js"></script>
+</body>
+</html>

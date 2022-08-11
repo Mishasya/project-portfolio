@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,kBAAkB;CACrC",
+    "sources": [
+        "../sass/style-light.scss"
+    ],
+    "names": [],
+    "file": "style-light.css"
+}
